@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ç, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="">
+    <title>Contacto</title>
+</head>
+<style>
+    body{
+        font-family: 'Montserrat', sans-serif;  
+    }
+    h1{
+        color:red;
+        text-align: center;
+    }
+    label{
+        font-weight: bold;
+    }
+    form span{
+        color:red;
+    }
+    .boton{
+        background-color: red;
+        color: white;
+        width: 110px;
+        font-size: 18px;
+        height: 28px;
+    }
+    .boton:hover{
+        background-color: white;
+        color:red;
+    }
+    input[type=text], input[type=email], input[type=date], select{
+        width: 250px;
+        height: 20px;
+        font-size: 16px;
+    }
+    input:focus{
+        background-color: lightyellow;
+    }
+    li{
+        float:left;
+        list-style: none;
+    }
+    
+</style>
+<body>
+    <header>
+    <ul>
+        <li><a href="index.html"> Inicio </a></li>
+        <li><a href="quienes.html"> Nosotros </a></li>
+        <li><a href="contacto.html"> Contacto </a></li>
+    </ul>
+    </header>
+    <section>
+    <h1>Escribinos, te respondemos a la brevedad</h1>
+    <form action="" method="POST">
+
+        <div>
+            <label for="txtNombre">Nombre: <span>*</span></label>
+            <!-- Dibuja una caja de texto -->
+            <input type="text" name="txtNombre" id="txtNombre" required>
+        </div>
+        <div>
+            <label for="">Correo: <span>*</span></label>
+            <input type="email" name="txtCorreo" id="txtCorreo" required>
+        </div>
+        <div>
+            <label for="txtTelefono">Teléfono: <span>*</span></label>
+            <input type="text" name="txtTelefono" id="txtTelefono" placeholder="Ej. (+54) 11 9999-9999" required>
+        </div>
+        <div>
+            <label for="">País de origen</label>
+            <select name="lstPais" id="lstPais">
+                <optgroup label="Sudamerica"">
+                    <option value="AR">Argentina</option>
+                    <option value="CO">Colombia</option>
+                    <option value="CL">Chile</option>
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="AL">Alemania</option>
+                    <option value="ES">España</option>
+                    <option value="FR">Francia</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="txtFechaNac">Fecha de nacimiento:</label>
+            <input type="date" name="txtFechaNac" id="txtFechaNac">
+        </div>
+        <div>
+            <label for="">Asunto: <span>*</span></label>
+            <select name="lstAsunto" id="lstAsunto" required>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="ventas">Ventas</option>
+                <option value="soporte">Soporte</option>
+                <option value="webmaster">Webmaster</option>
+            </select>
+        </div>
+        <div>
+            <label for="txtMensaje">Mensaje: <span>*</span></label>
+            <textarea name="txtMensaje" id="txtMensaje" cols="150" rows="15" required></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="chkNewsletter" id="chkNewsletter">
+            <label for="chkNewsletter">Deseo recibir novedades por correo</label>
+        </div>
+        <div>
+            <input type="checkbox" name="chkPoliticas" id="chkPoliticas">
+            <label for="chkPoliticas">Acepto las políticas de privacidad y condiciones de uso</label>
+        </div>
+        <div>
+            <label for="">¿Es mayor de edad?</label>
+            Sí <input type="radio" name="optMayor" id="optMayorSi">
+            No <input type="radio" name="optMayor" id="optMayorNo">
+        </div>
+        <div>
+            <input type="submit" value="Enviar" class="boton">
+        </div>
+    </form>
+    </section>
+</body>
+</html>

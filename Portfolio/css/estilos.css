@@ -1,0 +1,120 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eeeeee;
+}
+.nav-link{
+    color: #4b4b4b !important;
+    width: 250px;
+    font-size: 20px;
+    
+    }
+    .nav-link:hover{
+        color: cornflowerblue !important;
+    }
+ 
+    .nav-item{
+        text-align: center;
+        font-weight: 400;
+    }
+    .active{
+        text-decoration: underline;
+    }
+   .navbar{
+       padding: 0 12% ;
+       margin-top: 12px;
+   }
+   #contacto h1 , #contacto p{
+    font-weight: 700;
+    padding: 10px;
+
+   }
+   #contacto h1{
+       font-size: 55px;
+       margin: 60px 0px 20px;
+          }
+
+   #contacto p{
+       font-size: 30px;
+       line-height: 40px; /* para el interlineado */ 
+       margin: 0px 0px 60px; 
+   } 
+   
+
+   #contacto .form-control {
+    background-color: #eeeeee;
+    border: 0px;
+    border-bottom: 1px solid #4b4b4b;
+    border-radius: 0px;
+   }
+   #contacto .btn{
+       background-color :black;
+       border-radius: 1px;
+       border-color: #4b4b4b;
+       width: 130px;
+       height: 30px;  
+       padding:1px;
+       font-size: 15px;
+       font-weight: 500;
+   }
+   #contacto .btn:hover{
+background-color: silver;
+border: 0px;
+   }
+    footer i {
+    font-size: 30px;
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 8px 0 0 0;
+    border-radius: 80px;
+    margin: 0 15px;
+    color: black !important;
+}
+    footer i:hover{
+        color: cornflowerblue !important; 
+        text-decoration: none;
+    }
+    footer{
+       background-color: white;
+       padding: 70px;
+       margin: 60px 0px 0px 0px;
+    }
+  .depcsuite{
+      color: black !important;
+      font-weight: bolder;
+  }
+
+ @media (max-width:765px) {
+      #contacto h1{
+          font-size: 40px;
+          
+      }
+      #contacto p{
+          font-size: 20px;
+        
+          line-height: 30px;
+      }
+      
+      footer i {
+         
+      }
+      
+
+  }
+  #proyectos h1{
+    font-size: 55px;
+    margin: 60px 0px 20px;
+       }
+
+#proyectos h2{
+    font-size: 30px;
+    line-height: 40px; /* para el interlineado */ 
+    margin: 0px 0px 60px; 
+} 
+
+#proyectos img{
+    width: 100%;
+    height: 260px;
+
+}

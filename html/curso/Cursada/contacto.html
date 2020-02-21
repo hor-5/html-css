@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
+</head>
+<style>
+h1{
+    color: red ;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+input[type=text], input[type=email] select{
+    width: 215px;
+    height: 25px;
+    font-size: 16px;
+}
+.boton {
+   width:95px ;
+   height: 25px;
+    background-color: red;
+    color: white;
+    font-style: bold;
+    border: 1px lightcoral;
+}
+.boton:hover{
+    background-color: salmon;
+}
+form span{
+    color: red;
+}
+    
+nav li{
+    float: left;
+    list-style: none;
+    width:180px ;
+    }
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+}
+nav a:hover{
+    background-color: white;
+    color: red;
+   }
+section{
+    clear: both;
+}
+nav ul{
+    background-color: red;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+i{
+    font-size: 35px;
+    color: red;
+    border: 1px solid red;
+    height: 45px;
+    width: 55px;
+    text-align: center;
+    padding: 8px 0 0 0;
+    border-radius: 50px;
+    margin: 0 15px;
+} 
+footer{
+    text-align: center;
+}
+</style>
+
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html" target=self>Inicio</a></li>
+            <li><a href="quienes.html" target=self>Nosotros</a></li>
+            <li><a href="contacto.html" target=self>Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<section>
+        <h1>¡Escribimos te respondemos a la brevedad!</h1>
+        <form action="" method="POST"> 
+        <div>
+            <label for="txtNombre">Nombre: <span>*</span> </label>
+            <input type="text" name="txtNombre" id="txtNombre" required>
+        </div>
+        
+        <div>
+            <label for="txtCorreo">Email: <span>*</span></label>
+            <input type="text" name="txtCorreo" id="txtCorreo" required>
+        </div>
+        
+        <div>
+            <label for="txtTelefono">Telefono:<span>*</span></label>
+            <input type="text" name="txtTelefono" id="txtTelefono" required>
+        </div>
+    <div>
+        <label for="">Pais <span>*</span></label>
+    <select name="lstPais" id="lstPais">    
+        <optgroup label=Sudamerica>
+            <option value="Ar">Argentina</option>
+            <option value="Br">Brasil</option>
+            <option value="Col">Colombia</option>
+        </optgroup>
+        <optgroup label=Europa>
+            <option value="Es">España</option>
+            <option value="Fr">Francia</option>
+            <option value="Al">Alemania</option>
+        </optgroup>
+    </select>
+    </div>
+        <div>
+            <label for="">Asunto:<span>*</span></label>
+            <select name="lstAsunto" id="lstAsunto">
+                <option value=""disabled selected>Seleccionar</option>
+                <option value="Ventas">Ventas</option>
+                <option value="Soporte">Soporte</option>
+                <option value="Webmaster">WebMaster</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="">Mensaje:<span>*</span></label>
+            <textarea name="textMensaje" id="textMensaje" cols="30" rows="10" required></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="chknewsletter" id="chknewsletter">
+            <label for="chknewsletter">Deseo recibir novedades al correo</label>
+        </div>
+        <div>
+            <input type="checkbox" name="chkpoliticas" id="chkpoliticas">
+            <label for="chkpoliticas">Acepto las politicas de privacidad</label>
+
+        </div>
+        <div>
+            <label for="">¿Es mayor de edad?</label>
+            <input type="radio" name="optmayor" id="optmayorsi" value="si"><label for="optmayorsi">Si</label>
+            <input type="radio" name="optmayor" id="optmayorno" value="no"><label for="optmayorno" >No</label>
+        </div>
+        <div>
+            <input type="submit" value="Enviar" id="btnEnviar name= "btnEnviar" class="boton">
+        </div>
+        
+
+        </form>
+</section>
+
+<footer>
+    <a href="https://www.linkedin.com/" target=blank><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.whatsapp.com/" target=blank><i class="fab fa-whatsapp"></i></a>
+</footer>
+</body>
+</html>

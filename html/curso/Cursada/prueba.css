@@ -1,0 +1,65 @@
+h1{
+    text-align: center;
+    color: rgb(124, 6, 6);
+font-size: 36px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: silver;
+}
+#productos h2{
+    font-size: 24px;
+    color: red;
+}
+#productos img{
+    width: 300px;
+}
+#productos p{
+   font-weight: bold ;
+}
+.lista{
+    font-size: 14px;
+    font-weight: bolder;
+}
+.subtitulo{
+   font-size: 30px;
+   position: relative;
+   left: 530px;
+
+}
+.boton{
+    background-color: red;
+    color: seashell;
+    border: 1px coral;
+    width:95px ;
+    height: 25px;
+}
+.boton:hover{
+    background-color: lightcoral;
+}
+.form{
+    font-weight: bold;
+    background-color: rgb(124, 6, 6);
+    position: relative;
+    left: 500px;
+    color: whitesmoke;
+}
+.botonformulario{
+    background-color: red;
+    color: seashell;
+    border: 1px coral;
+    width:50px ;
+    height: 20px;
+    position: relative;
+    left: 200px;
+}
+.botonformulario:hover{
+    background-color: lightcoral;
+}
+.asterisco{
+    color: yellow;
+}
+.Email{
+    position: relative;
+    left: 22px;
+}
